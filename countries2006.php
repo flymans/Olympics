@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Участники Олимпийских игр 2006</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <?php
+  $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user", "123456");
+  $dbselect = mysql_select_db("u551990000_2006");
+  mysql_set_charset("utf8");
+
+  $query = "SELECT * FROM countries";
+  $result = mysql_query($query) or die(mysql_error());
+
+  echo '<center>';
+  echo '<h1>Страны:</h1>';
+  echo '<table border="1"><caption></caption><tr><th><b>Страна</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';
+	echo '</center>';
+
+  while ($row = mysql_fetch_array($result))
+  {
+      echo '<tr align="center"><td><b>'.$row[1].'</b></td><td>'.$row[2].'</td><td>'.$row[3].'</td><td>'.$row[4].'</td>';
+  }
+  ?>
+  <a href="menu2006.php"><button type="button" name="button">Назад</button></a>
+</body>
+</html>
