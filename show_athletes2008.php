@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Участники Олимпийских игр 2006</title>
+  <title>Участники Олимпийских игр 2008</title>
   <link rel="stylesheet" href="css\style.css">
 </head>
 <body style="background-color:#dee1e5">
@@ -11,10 +11,10 @@
     <input style="background-color:#6495ED"class="button1" type="submit" name="sort_by_medals" value="Сортировка по медалям" /><br>
     <input style="background-color:#6495ED" class="button1" type="submit" name="sort_by_country" value="Сортировка по стране" /><br>
 </form>
-<center>  <a href="menu2006.php" class="button"><span>←</span>Назад</a></center>
+<center>  <a href="menu2008.php" class="button"><span>←</span>Назад</a></center>
   <?php
-  $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user", "123456");
-  $dbselect = mysql_select_db("u551990000_2006");
+  $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user1", "123456");
+  $dbselect = mysql_select_db("u551990000_2008");
   mysql_set_charset("utf8");
 
   $query = "SELECT * FROM athletes ORDER BY gold desc, silver desc, bronze desc";

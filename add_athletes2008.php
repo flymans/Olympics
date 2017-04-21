@@ -8,7 +8,7 @@
 <body class="olympq">
   <center>
   <h1>Добавить спортсмена:</h1>
-  <form class="form12" action="add_athletes2006.php" method="post">
+  <form class="form12" action="add_athletes2008.php" method="post">
  ФИО:<br>
     <input  type="text" name="Name" value=""><br>
      Страна:<br>
@@ -27,14 +27,14 @@
     </div>
     <div class="knopka">
 
-    <a href="athletes2006.php" class="button"><span>←</span>Назад</a>
+    <a href="athletes2008.php" class="button"><span>←</span>Назад</a>
     <a style="width:160px"class="button4"><span style="width:50px">✔</span><input  type="submit" name="add" value="Добавить"></a><br>
 </div>
   </form>
 
   <?php
-  $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user", "123456");
-  $dbselect = mysql_select_db("u551990000_2006");
+  $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user1", "123456");
+  $dbselect = mysql_select_db("u551990000_2008");
   mysql_set_charset("utf8");
 
   if (!$cnct || !$dbselect) {

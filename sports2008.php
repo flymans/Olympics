@@ -6,8 +6,8 @@
 </head>
 <body class="olympq">
   <?php
-  $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user", "123456");
-  $dbselect = mysql_select_db("u551990000_2006");
+  $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user1", "123456");
+  $dbselect = mysql_select_db("u551990000_2008");
   mysql_set_charset("utf8");
 
   $query = "SELECT * FROM sports";
@@ -20,6 +20,6 @@
       echo '<ul><li><b>'.$row[1].'</li></ul></td>';
   }
   ?>
-  <a  href="menu2006.php" class="button12"><span>←</span>Назад</a>
+  <a  href="menu2008.php" class="button12"><span>←</span>Назад</a>
 </body>
 </html>

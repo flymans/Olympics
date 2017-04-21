@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Участники Олимпийских игр 2006</title>
+  <title>Участники Олимпийских игр 2008</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body style="background-color:#dee1e5">
   <?php
-  $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user", "123456");
-  $dbselect = mysql_select_db("u551990000_2006");
+  $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user1", "123456");
+  $dbselect = mysql_select_db("u551990000_2008");
   mysql_set_charset("utf8");
 
   $query = "SELECT * FROM countries order by gold desc, silver desc, bronze desc";
@@ -23,6 +23,6 @@
       echo '<tr align="center"><td><b>'.$row[1].'</b></td><td>'.$row[2].'</td><td>'.$row[3].'</td><td>'.$row[4].'</td>';
   }
   ?>
-    <a href="menu2006.php" class="button"><span>←</span>Назад</a>
+    <a href="menu2008.php" class="button"><span>←</span>Назад</a>
 </body>
 </html>
