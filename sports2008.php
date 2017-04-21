@@ -4,7 +4,7 @@
   <title>Виды спорта</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="olympq">
+<body style="background-size: cover"class="olympq">
   <?php
   $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user1", "123456");
   $dbselect = mysql_select_db("u551990000_2008");
