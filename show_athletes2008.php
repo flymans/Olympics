@@ -11,7 +11,7 @@
     <input style="background-color:#6495ED"class="button1" type="submit" name="sort_by_medals" value="Сортировка по медалям" /><br>
     <input style="background-color:#6495ED" class="button1" type="submit" name="sort_by_country" value="Сортировка по стране" /><br>
 </form>
-<center>  <a href="menu2008.php" class="button"><span>←</span>Назад</a></center>
+<center>  <a href="athletes2008.php" class="button"><span>←</span>Назад</a></center>
   <?php
   $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user1", "123456");
   $dbselect = mysql_select_db("u551990000_2008");
