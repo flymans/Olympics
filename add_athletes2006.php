@@ -10,19 +10,14 @@
   <h1>Добавить спортсмена:</h1>
   <form class="add_athlete_block" action="add_athletes2006.php" method="post">
     <div class="left_div">
-
-
  ФИО:<br>
     <input  type="text" name="Name" value=""><br>
      Страна:<br>
     <input type="text" name="Country" value=""><br>
      Вид спорта:<br>
     <input type="text" name="Sport" value="">
-
   </div>
     <div class="right_div">
-
-
      Количество золота:<br>
     <input type="number" min="0"  name="Gold" value="0"><br>
     Количество серебра:<br>
@@ -35,16 +30,13 @@
     <a class="button"><span>✔</span><input class="input_button" type="submit" name="add" value="Добавить"></a><br>
 </div>
   </form>
-
   <?php
   $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user", "123456");
   $dbselect = mysql_select_db("u551990000_2006");
   mysql_set_charset("utf8");
-
   if (!$cnct || !$dbselect) {
     mysql_error();
   }
-
   if (isset($_POST['add'])) {
     $name = strip_tags(trim($_POST['Name']));
     $country = strip_tags(trim($_POST['Country']));
@@ -54,11 +46,10 @@
     $bronze = strip_tags(trim($_POST['Bronze']));
     $all = "INSERT INTO athletes (Name, Country, Sport, Gold, Silver, Bronze) VALUES ('$name', '$country', '$sport', '$gold', '$silver', '$bronze')";
     $result = mysql_query($all);
-    echo '<i> Спортсмен под номером <b>'.$t.'</b> был удален.</i> <br />';
+    echo '<i> Спортсмен <b>'.$name.'</b> был добавлен.</i> <br />';
     mysql_close($cnct);
   }
   ?>
-
 </center>
 </body>
 </html>

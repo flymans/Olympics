@@ -11,18 +11,16 @@
     <input  class="button1" type="submit" name="sort_by_medals" value="Сортировка по медалям" /><br>
     <input  class="button1" type="submit" name="sort_by_country" value="Сортировка по стране" /><br>
 </form>
-
   <?php
   $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user", "123456");
   $dbselect = mysql_select_db("u551990000_2006");
   mysql_set_charset("utf8");
-
   $query = "SELECT * FROM athletes ORDER BY gold desc, silver desc, bronze desc";
   $result = mysql_query($query) or die(mysql_error());
   echo '<div>';
   echo '<center>';
   echo '<a href="athletes2006.php" class="button"><span>←</span>Назад</a>';
-  echo '<table class="table_dark" border="1"><caption></caption><tr><th><b>Имя</b></th><th><b>Страна</b></th><th><b>Вид спорта</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';
+  echo '<table class="table_dark"><caption></caption><tr><th><b>Имя</b></th><th><b>Страна</b></th><th><b>Вид спорта</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';
 	echo '</center>';
   echo '</div>';
   if( isset( $_POST['sort_by_country'] ) )

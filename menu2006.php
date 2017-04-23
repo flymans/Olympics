@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Зимние Олимпийские игры 2006</title>
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="background2" >
   <center><h1>Зимние Олимпийские игры 2006 в Турине, Италия</h1></center>

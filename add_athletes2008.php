@@ -8,16 +8,16 @@
 <body class="background2">
   <center>
   <h1>Добавить спортсмена:</h1>
-  <form class="form12" action="add_athletes2008.php" method="post">
+  <form class="add_athelete_block" action="add_athletes2008.php" method="post">
+    <div class="left_div">
  ФИО:<br>
     <input  type="text" name="Name" value=""><br>
      Страна:<br>
     <input type="text" name="Country" value=""><br>
      Вид спорта:<br>
-    <input style="margin-left: 175px;" type="text" name="Sport" value="">
-    <div class="blok">
-
-
+    <input type="text" name="Sport" value="">
+  </div>
+    <div class="right_div">
       Количество золота:<br>
      <input type="number" min="0"  name="Gold" value="0"><br>
      Количество серебра:<br>
@@ -25,22 +25,18 @@
      Количество бронзы:<br>
      <input type="number" min="0" name="Bronze" value="0"><br>
     </div>
-    <div class="knopka">
-
-    <a href="athletes2008.php" class="button"><span>←</span>Назад</a>
-    <a style="width:160px"class="button4"><span style="width:50px">✔</span><input  type="submit" name="add" value="Добавить"></a><br>
+    <div class="buttons_block">
+    <a href="athletes2008.php" class="button_2"><span>←</span>Назад</a>
+    <a class="button_2"><span>✔</span><input class="input_button" type="submit" name="add" value="Добавить"></a><br>
 </div>
   </form>
-
   <?php
   $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user1", "123456");
   $dbselect = mysql_select_db("u551990000_2008");
   mysql_set_charset("utf8");
-
   if (!$cnct || !$dbselect) {
     mysql_error();
   }
-
   if (isset($_POST['add'])) {
     $name = strip_tags(trim($_POST['Name']));
     $country = strip_tags(trim($_POST['Country']));
@@ -54,7 +50,6 @@
     mysql_close($cnct);
   }
   ?>
-
 </center>
 </body>
 </html>

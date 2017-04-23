@@ -4,25 +4,25 @@
   <title>Участники Олимпийских игр 2008</title>
   <link rel="stylesheet" href="css\style.css">
 </head>
-<body style="background-color:#dee1e5">
-  <center><h1>Список участников:</h1></center>
-  <form style="float:left" method="POST">
-    <input style="background-color:#6495ED" class="button1" type="submit" name="sort_by_name" value="Сортировка по имени" /><br>
-    <input style="background-color:#6495ED"class="button1" type="submit" name="sort_by_medals" value="Сортировка по медалям" /><br>
-    <input style="background-color:#6495ED" class="button1" type="submit" name="sort_by_country" value="Сортировка по стране" /><br>
+<body style="background3">
+   <center><h1>Список участников:</h1></center>
+  <form class="sorting_buttons" method="POST">
+    <input class="button1" type="submit" name="sort_by_name" value="Сортировка по имени" /><br>
+    <input class="button1" type="submit" name="sort_by_medals" value="Сортировка по медалям" /><br>
+    <input class="button1" type="submit" name="sort_by_country" value="Сортировка по стране" /><br>
 </form>
-<center>  <a href="athletes2008.php" class="button"><span>←</span>Назад</a></center>
   <?php
   $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user1", "123456");
   $dbselect = mysql_select_db("u551990000_2008");
   mysql_set_charset("utf8");
-
   $query = "SELECT * FROM athletes ORDER BY gold desc, silver desc, bronze desc";
   $result = mysql_query($query) or die(mysql_error());
-
+  echo '<div>';
   echo '<center>';
-  echo '<table class="table_dark" border="1"><caption></caption><tr><th><b>Имя</b></th><th><b>Страна</b></th><th><b>Вид спорта</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';
-	echo '</center>';
+    echo '<a href="athletes2008.php" class="button_2"><span>←</span>Назад</a>';
+  echo '<table class="table_dark"><caption></caption><tr><th><b>Имя</b></th><th><b>Страна</b></th><th><b>Вид спорта</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';	echo '</center>';
+  echo '</center>';
+  echo '</div>';
   if( isset( $_POST['sort_by_country'] ) )
   {
     $query3 = "SELECT * FROM athletes ORDER BY country";
