@@ -57,7 +57,7 @@
 }
   ?>
 
-<a href="menu2006.php" class="button"><span>←</span>Назад</a>
+<a href="athletes2006.php" class="button"><span>←</span>Назад</a>
 <a  href="index.php" class="button4"><span>⌂</span>В главное меню</a>
   </center>
 </body>
