@@ -8,7 +8,7 @@
 <body class="background2">
   <center>
   <h1>Добавить спортсмена:</h1>
-  <form class="add_athelete_block" action="add_athletes2008.php" method="post">
+  <form class="add_athlete_block" action="add_athletes2008.php" method="post">
     <div class="left_div">
  ФИО:<br>
     <input  type="text" name="Name" value=""><br>
@@ -27,7 +27,7 @@
     </div>
     <div class="buttons_block">
     <a href="athletes2008.php" class="button_2"><span>←</span>Назад</a>
-    <a class="button_2"><span>✔</span><input class="input_button" type="submit" name="add" value="Добавить"></a><br>
+    <a class="button_2"><span>✔</span><input class="input_button_2" type="submit" name="add" value="Добавить"></a><br>
 </div>
   </form>
   <?php

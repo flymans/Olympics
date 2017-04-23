@@ -53,7 +53,7 @@
     </select>
   </aside>
 </center>
-      <a class="button_2" ><span>✔</span><input class="input_button" type="submit" name="find" value="Найти"></a><br>
+      <a class="button_2" ><span>✔</span><input class="input_button_2" type="submit" name="find" value="Найти"></a><br>
   </form>
   <?php
   $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user1", "123456");

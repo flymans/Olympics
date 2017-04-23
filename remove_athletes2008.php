@@ -22,7 +22,7 @@
   while ($row = mysql_fetch_object($result)) {
     echo '<option value="'.  $row->Athlete_id . '">'. $row->Name . ", ". $row->Country . ", ". $row->Sport . ", ". $row->Gold . ", ". $row->Silver .  ", ". $row->Bronze . '</option>';
   }
-  echo '</select><br><input class="button2" type="submit" value="Удалить" /><INPUT class = "button2 TYPE="button" onClick="history.go(0)" VALUE="Обновить"><br>';
+  echo '</select><br><input class="button2"" type="submit" value="Удалить"/>  <INPUT class = "button2" TYPE="button" onClick="history.go(0)" VALUE="Обновить"><br>';
 
   if (isset($_POST['items']))
   {
