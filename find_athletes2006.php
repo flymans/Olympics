@@ -6,10 +6,12 @@
   <link rel="stylesheet" href="css\style.css">
 </head>
 <body style="background-color:#dee1e5">
+  <br>
   <form action="find_athletes2006.php" method="post">
+<center>
     <aside>
 
-    <input type="text" name="Name" placeholder="Введите имя/фамилию"> <br><br>
+    <input type="text" name="Name" placeholder="Введите имя/фамилию">
     <select name="Country">
     <option value="">Выберите страну...</option>
     <option value="Канада">Канада</option>
@@ -17,7 +19,7 @@
     <option value="Соединенные штаты">Соединенные штаты</option>
     <option value="Германия">Германия</option>
     <option value="Австрия">Австрия</option>
-  </select><br><br>
+  </select>
     <select name="Sport">
     <option value="">Выберите спорт...</option>
     <option value="Конькобежный спорт">Конькобежный спорт</option>
@@ -31,14 +33,15 @@
     <option value="Фигурное катание">Фигурное катание</option>
     </select>
   </aside>
-      <a style="width:160px"class="button4" ><span style="width:50px">✔</span><input  type="submit" name="find" value="Найти"></a><br>
+</center>
+      <a class="button" ><span>✔</span><input class="input_button" type="submit" name="find" value="Найти"></a><br>
   </form>
   <?php
   $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user", "123456");
   $dbselect = mysql_select_db("u551990000_2006");
   mysql_set_charset("utf8");
   echo '<center>';
-  echo '<table style="right:0px;" border="1"><caption></caption><tr><th><b>Имя</b></th><th><b>Страна</b></th><th><b>Вид спорта</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';
+  echo '<table class="table_dark" border="1"><caption></caption><tr><th><b>Имя</b></th><th><b>Страна</b></th><th><b>Вид спорта</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';
   echo '</center>';
 
   if( isset( $_POST['find'] ) )
@@ -58,7 +61,7 @@
   ?>
 
 <a href="athletes2006.php" class="button"><span>←</span>Назад</a>
-<a  href="index.php" class="button4"><span>⌂</span>В главное меню</a>
+<a  href="index.php" class="button"><span>⌂</span>В главное меню</a>
   </center>
 </body>
 </html>

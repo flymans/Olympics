@@ -4,7 +4,7 @@
   <title>Спортсмены</title>
   <link rel="stylesheet" href="css\style.css">
 </head>
-<body class="olympq">
+<body class="background2">
   <center><h1>Участники летних Олимпийских игр</h1></center>
 <center style="line-height:89px;">  <a style="float:none;"class="button1" href="show_athletes2008.php">Показать список участников Олимпиады 2008</a><br>
   <a style="float:none;"  class="button1" href="add_athletes2008.php">Добавить участника</a><br>

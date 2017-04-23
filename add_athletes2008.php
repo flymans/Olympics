@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="olympq">
+<body class="background2">
   <center>
   <h1>Добавить спортсмена:</h1>
   <form class="form12" action="add_athletes2008.php" method="post">
@@ -50,6 +50,7 @@
     $bronze = strip_tags(trim($_POST['Bronze']));
     $all = "INSERT INTO athletes (Name, Country, Sport, Gold, Silver, Bronze) VALUES ('$name', '$country', '$sport', '$gold', '$silver', '$bronze')";
     $result = mysql_query($all);
+    echo '<i> Спортсмен <b>'.$name.'</b> был добавлен.</i> <br />';
     mysql_close($cnct);
   }
   ?>

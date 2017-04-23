@@ -21,7 +21,7 @@
   $result = mysql_query($query) or die(mysql_error());
 
   echo '<center>';
-  echo '<table border="1"><caption></caption><tr><th><b>Имя</b></th><th><b>Страна</b></th><th><b>Вид спорта</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';
+  echo '<table class="table_dark" border="1"><caption></caption><tr><th><b>Имя</b></th><th><b>Страна</b></th><th><b>Вид спорта</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';
 	echo '</center>';
   if( isset( $_POST['sort_by_country'] ) )
   {

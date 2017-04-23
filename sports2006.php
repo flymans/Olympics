@@ -4,7 +4,7 @@
   <title>Виды спорта</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="olympq">
+<body class="background2">
   <?php
   $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user", "123456");
   $dbselect = mysql_select_db("u551990000_2006");
@@ -13,13 +13,16 @@
   $query = "SELECT * FROM sports";
   $result = mysql_query($query) or die(mysql_error());
 
+  echo '<center>';
   echo '<h1>Виды спорта:</h1>';
+  echo '<table class = "table_dark"><caption></caption><tr><th><b>Вид спорта:</b></th></tr>';
+	echo '</center>';
 
   while ($row = mysql_fetch_array($result))
   {
-      echo '<ul><li><b>'.$row[1].'</li></ul></td>';
+      echo '<tr align="center"><td><b>'.$row[1].'</b></td>';
   }
   ?>
-  <a  href="menu2006.php" class="button12"><span>←</span>Назад</a>
+  <a  href="menu2006.php" class="button"><span>←</span>Назад</a>
 </body>
 </html>

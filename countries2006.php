@@ -15,7 +15,7 @@
 
   echo '<center>';
   echo '<h1>Страны:</h1>';
-  echo '<table style= "right:0%" border="1"><caption></caption><tr><th><b>Страна</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';
+  echo '<table class = "table_dark"><caption></caption><tr><th><b>Страна</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';
 	echo '</center>';
 
   while ($row = mysql_fetch_array($result))

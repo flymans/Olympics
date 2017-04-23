@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class = "olympq">
+<body class = "background2">
   <center><h1>Удалить спортсмена:</h1>
   Выберите спортсмена на удаление:
   <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
@@ -22,7 +22,7 @@
   while ($row = mysql_fetch_object($result)) {
     echo '<option value="'.  $row->Athlete_id . '">'. $row->Name . ", ". $row->Country . ", ". $row->Sport . ", ". $row->Gold . ", ". $row->Silver .  ", ". $row->Bronze . '</option>';
   }
-  echo '</select><br><input class="button9" style="width:9%;background-color:#6495ED;" type="submit" value="Удалить" /><INPUT class = "button9" TYPE="button" onClick="history.go(0)" VALUE="Обновить"><br>';
+  echo '</select><br><input class="button1"" type="submit" value="Удалить"/>  <INPUT class = "button1" TYPE="button" onClick="history.go(0)" VALUE="Обновить"><br>';
 
   if (isset($_POST['items']))
   {

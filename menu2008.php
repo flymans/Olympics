@@ -4,7 +4,7 @@
   <title>Зимние Олимпийские игры 2006</title>
   <link rel="stylesheet" href="css\style.css">
 </head>
-<body class="olympq" >
+<body class="background2" >
 
 
 

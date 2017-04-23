@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class = "olympq">
+<body class = "background2">
   <center><h1>Удалить спортсмена:</h1>
   Выберите спортсмена на удаление:
   <form action="<?=$_SERVER['PHP_SELF']?>" method="post">

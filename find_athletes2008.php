@@ -58,7 +58,7 @@
   $dbselect = mysql_select_db("u551990000_2008");
   mysql_set_charset("utf8");
   echo '<center>';
-  echo '<table style="right:0px;" border="1"><caption></caption><tr><th><b>Имя</b></th><th><b>Страна</b></th><th><b>Вид спорта</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';
+  echo '<table class="table_dark" style="right:0px;" border="1"><caption></caption><tr><th><b>Имя</b></th><th><b>Страна</b></th><th><b>Вид спорта</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';
   echo '</center>';
 
   if( isset( $_POST['find'] ) )

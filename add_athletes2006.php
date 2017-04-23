@@ -5,17 +5,22 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="olympq">
+<body class="background2">
   <center>
   <h1>Добавить спортсмена:</h1>
-  <form class="form12" action="add_athletes2006.php" method="post">
+  <form class="add_athlete_block" action="add_athletes2006.php" method="post">
+    <div class="left_div">
+
+
  ФИО:<br>
     <input  type="text" name="Name" value=""><br>
      Страна:<br>
     <input type="text" name="Country" value=""><br>
      Вид спорта:<br>
-    <input style="margin-left: 175px;" type="text" name="Sport" value="">
-    <div class="blok">
+    <input type="text" name="Sport" value="">
+
+  </div>
+    <div class="right_div">
 
 
      Количество золота:<br>
@@ -25,10 +30,9 @@
     Количество бронзы:<br>
     <input type="number" min="0" name="Bronze" value="0"><br>
     </div>
-    <div class="knopka">
-
+    <div class="buttons_block">
     <a href="athletes2006.php" class="button"><span>←</span>Назад</a>
-    <a style="width:160px"class="button4"><span style="width:50px">✔</span><input  type="submit" name="add" value="Добавить"></a><br>
+    <a class="button"><span>✔</span><input class="input_button" type="submit" name="add" value="Добавить"></a><br>
 </div>
   </form>
 
@@ -50,6 +54,7 @@
     $bronze = strip_tags(trim($_POST['Bronze']));
     $all = "INSERT INTO athletes (Name, Country, Sport, Gold, Silver, Bronze) VALUES ('$name', '$country', '$sport', '$gold', '$silver', '$bronze')";
     $result = mysql_query($all);
+    echo '<i> Спортсмен под номером <b>'.$t.'</b> был удален.</i> <br />';
     mysql_close($cnct);
   }
   ?>
