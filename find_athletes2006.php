@@ -5,7 +5,7 @@
   <title>Поиск спортсмена</title>
   <link rel="stylesheet" href="css\style.css">
 </head>
-<body style="background-color:#dee1e5">
+<body class="background3">
   <br>
   <form action="find_athletes2006.php" method="post">
 <center>

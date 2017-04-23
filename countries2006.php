@@ -4,7 +4,7 @@
   <title>Участники Олимпийских игр 2006</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-color:#dee1e5">
+<body class="background3">
   <?php
   $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user", "123456");
   $dbselect = mysql_select_db("u551990000_2006");

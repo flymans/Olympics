@@ -33,6 +33,7 @@ h1{
 .sorting_buttons
   {
   width: 100%;
+  line-height: 70px;
   }
 
 
@@ -44,7 +45,7 @@ h1{
   background-size: cover;
   overflow: hidden;
   background-position: center center;
-}           /* Выблядос лол */
+}
 .button1_menu{
    float: left;
     margin-top: 2%;
@@ -62,7 +63,6 @@ h1{
  padding:13px 23px;
  border:none;
  border-radius: 4px;
- /*font:20px Verdana, Geneva, sans-serif;*/
  font-weight:bold;
  color: #e5ffff;
  background-color: #4169E1;
@@ -240,3 +240,6 @@ margin-right: 12%;
       -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=2,Color=#33000000,Positive=true)";
       filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=2,Color=#33000000,Positive=true);
   }
+.background3{
+  background-color:#dee1e5;
+}
