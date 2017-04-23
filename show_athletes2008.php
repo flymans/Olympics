@@ -6,7 +6,7 @@
 </head>
 <body style="background3">
    <center><h1>Список участников:</h1></center>
-  <form class="sorting_buttons_2" method="POST">
+  <form class="sorting_buttons" method="POST">
     <input class="button2" type="submit" name="sort_by_name" value="Сортировка по имени" /><br>
     <input class="button2" type="submit" name="sort_by_medals" value="Сортировка по медалям" /><br>
     <input class="button2" type="submit" name="sort_by_country" value="Сортировка по стране" /><br>
