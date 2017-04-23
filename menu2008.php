@@ -18,7 +18,8 @@
 
 <a style="float:none"class="button1" href="athletes2008.php">Спортсмены</a>
 <a style="float:none"class="button1" href="countries2008.php">Страны</a>
-<a style="float:none" class="button1" href="sports2008.php">Виды спорта</a><br>
+<a style="float:none" class="button1" href="sports2008.php">Виды спорта</a>
+<a style="float:none" class="button1" href="information2008.php">Об Олимпиаде</a><br>
 <a  href="index.php" class="button4"><span>⌂</span>В главное меню</a>
 
 
