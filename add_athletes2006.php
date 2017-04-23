@@ -19,11 +19,11 @@
 
 
      Количество золота:<br>
-    <input type="number"  name="Gold" value=""><br>
+    <input type="number" min="0"  name="Gold" value="0"><br>
     Количество серебра:<br>
-    <input type="number"  name="Silver" value=""><br>
+    <input type="number"  min="0" name="Silver" value="0"><br>
     Количество бронзы:<br>
-    <input type="number"  name="Bronze" value=""><br>
+    <input type="number" min="0" name="Bronze" value="0"><br>
     </div>
     <div class="knopka">
 

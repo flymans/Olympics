@@ -18,12 +18,12 @@
     <div class="blok">
 
 
-     Количество золота:<br>
-    <input type="number"  name="Gold" value=""><br>
-    Количество серебра:<br>
-    <input type="number"  name="Silver" value=""><br>
-    Количество бронзы:<br>
-    <input type="number"  name="Bronze" value=""><br>
+      Количество золота:<br>
+     <input type="number" min="0"  name="Gold" value="0"><br>
+     Количество серебра:<br>
+     <input type="number"  min="0" name="Silver" value="0"><br>
+     Количество бронзы:<br>
+     <input type="number" min="0" name="Bronze" value="0"><br>
     </div>
     <div class="knopka">
 
