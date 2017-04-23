@@ -29,14 +29,11 @@ h1{
 .table_dark td:last-child {
   border-right: none;
 }
-
 .sorting_buttons
   {
   width: 100%;
   line-height: 70px;
   }
-
-
 .background1{
   background-image: url(img/background.jpg);
   width: 100%;
@@ -89,8 +86,6 @@ h1{
   background-color:#8B0000;
 
   }
-
-
 .button1{
  text-decoration:none;
  text-align:center;
@@ -132,7 +127,6 @@ h1{
   background-color:#8B0000;
 
   }
-
 .background2{
   background-image: url(img/olymp.jpg);
   width: 100%;
@@ -143,10 +137,6 @@ h1{
   background-position: center center;
 
 }
-.g{
-  font-size: 43px;
-  margin-left: 15px;
-  }
 a.button {
   display:block;
   text-align: center;
@@ -174,7 +164,6 @@ a.button {
   -ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=2,Color=#33000000,Positive=true)";
   filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=2,Color=#33000000,Positive=true);
   }
-
 a.button span {
   position: absolute;
   left: 0;
@@ -192,12 +181,11 @@ a.button:hover span{
   color: #297FB8;
   background: white;
 }
-
 .add_athlete_block{
   width: 653px;
-height: 300px;
-margin-right: 12%;
-}
+  height: 300px;
+  margin-right: 12%;
+  }
 .right_div{
   float: right;
   position: relative;
