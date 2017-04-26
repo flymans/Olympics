@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Спортсмены</title>
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="background2">
   <center><h1>Участники летних Олимпийских игр</h1></center>

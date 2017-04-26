@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Поиск спортсмена</title>
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="background3">
   <br>
@@ -56,9 +56,7 @@
       <a class="button_2" ><span>✔</span><input class="input_button_2" type="submit" name="find" value="Найти"></a><br>
   </form>
   <?php
-  $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user1", "123456");
-  $dbselect = mysql_select_db("u551990000_2008");
-  mysql_set_charset("utf8");
+  include 'database2008.php';;
   echo '<center>';
   echo '<table class="table_dark"><caption></caption><tr><th><b>Имя</b></th><th><b>Страна</b></th><th><b>Вид спорта</b></th><th><b>Золото</b></th><th><b>Серебро</b></th><th><b>Бронза</b></th></tr>';
   echo '</center>';

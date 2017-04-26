@@ -6,9 +6,7 @@
 </head>
 <body class="background3">
   <?php
-  $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user1", "123456");
-  $dbselect = mysql_select_db("u551990000_2008");
-  mysql_set_charset("utf8");
+  include 'database2008.php';;
 
   $query = "SELECT * FROM sports";
   $result = mysql_query($query) or die(mysql_error());

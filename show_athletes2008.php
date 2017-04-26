@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Участники Олимпийских игр 2008</title>
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body style="background3">
    <center><h1>Список участников:</h1></center>
@@ -12,9 +12,7 @@
     <input class="button2" type="submit" name="sort_by_country" value="Сортировка по стране" /><br>
 </form>
   <?php
-  $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user1", "123456");
-  $dbselect = mysql_select_db("u551990000_2008");
-  mysql_set_charset("utf8");
+  include 'database2008.php';;
   $query = "SELECT * FROM athletes ORDER BY gold desc, silver desc, bronze desc";
   $result = mysql_query($query) or die(mysql_error());
   echo '<div>';

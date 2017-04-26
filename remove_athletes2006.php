@@ -12,9 +12,7 @@
   <select name="items[]" multiple="multiple" size=10>
 </center>
   <?php
-  $cnct = @mysql_connect("mysql.hostinger.co.uk", "u551990000_user", "123456");
-  $dbselect = mysql_select_db("u551990000_2006");
-  mysql_set_charset("utf8");
+  include 'database2006.php';
 
   $query = "SELECT * FROM athletes";
   $result = mysql_query($query) or die(mysql_error());
