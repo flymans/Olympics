@@ -4,7 +4,7 @@
   <title>Участники Олимпийских игр 2008</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background3">
+<body class="background3">
    <center><h1>Список участников:</h1></center>
   <form class="sorting_buttons" method="POST">
     <input class="button2" type="submit" name="sort_by_name" value="Сортировка по имени" /><br>
